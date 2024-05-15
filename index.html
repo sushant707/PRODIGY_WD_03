@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./assets/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <p class="name">Tic Tac Toe</p>
+      <span class="reset" id="reset"></span>
+      <span class="setting" id="setting"></span>
+    </nav>
+    <!-- player stat -->
+    <div class="p-stat-container">
+      <div class="p-o-stat">
+        <p>Player O</p>
+        <p id="p-o-score">0</p>
+      </div>
+      <div class="p-x-stat">
+        <p>Player X</p>
+        <p id="p-x-score">0</p>
+      </div>
+    </div>
+    <!-- game board -->
+    <div class="game-board" id="game-board">
+      <!-- div#box$.box$*9>span#boxspan$.boxspan$ -->
+      <div class="row1">
+        <div id="box1" class="box1 box"></div>
+        <div id="box2" class="box2 box"></div>
+        <div id="box3" class="box3 box"></div>
+      </div>
+      <div class="row2">
+        <div id="box4" class="box4 box"></div>
+        <div id="box5" class="box5 box"></div>
+        <div id="box6" class="box6 box"></div>
+      </div>
+      <div class="row3">
+        <div id="box7" class="box7 box"></div>
+        <div id="box8" class="box8 box"></div>
+        <div id="box9" class="box9 box"></div>
+      </div>
+    </div>
+    <!-- whose turn notifier -->
+    <div class="whose-turn">
+      <p>Turn of <span id="whose-turn">X</span></p>
+    </div>
+
+    <!-- model box for setting and version -->
+    <div class="model-box-container" id="model-box-container">
+      <div class="model-box" id="model-box">
+        <a href="https://github.com/zaid81567"><span class="github"></span></a>
+        <p class="version">v 1.0.0</p>
+        <button id="mute">
+          <span class="not-in-mute" id="mute-icon"></span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
